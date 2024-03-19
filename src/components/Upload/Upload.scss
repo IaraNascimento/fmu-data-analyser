@@ -1,0 +1,10 @@
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  textarea {
+    width: 80%;
+    min-height: 80px;
+  }
+}

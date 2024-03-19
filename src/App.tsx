@@ -1,25 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Upload from "./components/Upload/Upload";
+import Statistics from "./components/Statistics/Statistics";
+import "./App.scss";
+import { useState } from "react";
+import { Data } from "./types/types";
 
 function App() {
+  const [data, setData] = useState<Array<Data>>([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Upload newData={(newData) => setData(newData)} />
+      <Statistics data={data} />
+    </main>
   );
 }
 
