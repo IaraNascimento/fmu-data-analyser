@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Data } from "../../types/types";
-import initial from "../../datapoints/simple.json";
+import initial from "../../datapoints/example.json";
 import "./Upload.scss";
 
 interface UploadProps {

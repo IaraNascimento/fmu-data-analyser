@@ -9,6 +9,7 @@ function App() {
 
   return (
     <main>
+      <h1 className="main-title">Analise!!!</h1>
       <Upload newData={(newData) => setData(newData)} />
       <Statistics data={data} />
     </main>
